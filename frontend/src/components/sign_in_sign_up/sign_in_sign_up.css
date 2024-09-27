@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:ital,wght@200;300;400;500;600;700&display=swap");
+
+/* .header1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    width: 100%;
+} */
+.header1 {
+    border-top-left-radius: 40px;
+    width: 100%;
+    padding-top: 20px;
+    float: right;
+    background: #fff;
+    text-align: right;
+    margin: 0px;
+    justify-content: right;
+
+    /* Ensure background is consistent */
+}
+
+.outer {
+    display: flex;
+    background: #e9e7e0;
+    height: 100%;
+    width: 100%;
+    position: relative; /* Ensure relative positioning for sticky elements */
+}
+
+.outer-div {
+    background: #efe5de;
+    padding: 10px;
+    z-index: 1; /* Ensure it stays above other content */
+}
+
+.space {
+    padding: 220px 100px 10px 100px;
+    width:60%;
+}
+
+.space1 {
+    padding: 60px 0px;
+    width: 100%;
+    height: calc(100vh - 150px); /* Adjust height based on your needs */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background: #fff;
+    justify-content:flex-start;
+}
+
+.inner {
+    position: relative;
+}
+
+
+
+input {
+    padding: 15px;
+    margin: 20px;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.inputname{
+    width: 70%;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+  
+
+input:focus {
+    outline: none;
+}
+
+
+
+button {
+    float: right;
+    border-radius: 20px;
+    padding: 10px;
+    background: #2B2A2A;
+    color: #fff;
+    font-size: 16px;
+    width: 110px;
+}
+
+button:hover {
+    background: #585554;
+}
+
+footer {
+    margin-top: 100px;
+    background: #fff; 
+    padding: 0px 100px;/* Ensure background is consistent */
+}
+
+.passwordConstraint {
+    background-color: #e8eaf3;
+    padding: 10px 50px;
+    margin: 0px 100px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.textarea1 {
+    width: 70%;
+    padding: 15px;
+    margin: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Allows users to resize vertically only */
+  }

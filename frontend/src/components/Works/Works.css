@@ -1,0 +1,288 @@
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    position: relative;
+    margin: 50px 0px;
+  }
+  
+  .carousel ,.responsive{
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+  }
+  
+  .carousel-content {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-content.active {
+    opacity: 1;
+  }
+  
+  .testimonial-block, .testimonial-summary {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .testimonial-block {
+    background-color: #f9f9f9; /* Default color, will be overridden by inline styles */
+    margin-right: auto;
+    margin-left: 100px;
+    margin-bottom: 16px;
+    margin-top: 25px;
+    border-radius: 13px;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .testimonial-content{
+    margin: 40px;
+    padding:0px 50px;
+  }
+  
+  .customer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+  }
+  
+  .customer-section img {
+    width: 100px; /* Smaller image size */
+    height: 100px; /* Ensure the image is square */
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .testimonial-summary {
+    background-color: #fff;
+    transform: translateY(-100%);
+    opacity: 0;
+    margin: 50px 0px;
+    font-style: italic;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+ 
+  
+  .carousel-content.active .testimonial-summary {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .carousel-dots {
+    margin-top: 20px;
+  }
+  
+  .carousel-dots .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .carousel-dots .dot.active {
+    background-color: #717171;
+  }
+  
+  .prev-arrow, .next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .prev-arrow {
+    left: 10px;
+  }
+  
+  .next-arrow {
+    right: 10px;
+  }
+  
+  .prev-arrow:hover, .next-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .testimonial-block, .testimonial-summary {
+      width: 60%; /* Adjust width for medium screens */
+    }
+  
+    .testimonial-content {
+      margin: 15px 0;
+    }
+  
+    .customer-section img {
+      width: 100px; /* Smaller image size */
+      height: 100px;
+    }
+  
+    .testimonial-summary p {
+      font-size: 18px; /* Adjust font size */
+    }
+  
+    .prev-arrow, .next-arrow {
+      font-size: 14px; /* Smaller arrows */
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .testimonial-block, .testimonial-summary {
+      width: 70%; /* Adjust width for smaller screens */
+    }
+  
+    .testimonial-content {
+      margin: 10px 0;
+    }
+  
+    .customer-section img {
+      width: 80px; /* Further reduce image size */
+      height: 80px;
+    }
+  
+    .testimonial-summary p {
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    .prev-arrow, .next-arrow {
+      font-size: 12px; /* Smaller arrows */
+      padding: 4px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel {
+      height: 350px; /* Adjust height for smaller screens */
+    }
+  
+    .testimonial-block, .testimonial-summary {
+      width: 80%; /* Adjust width for very small screens */
+      padding: 5px;
+    }
+  
+    .testimonial-content {
+      margin: 10px 0;
+    }
+  
+    .customer-section img {
+      width: 75px; /* Further reduce image size */
+      height: 75px;
+    }
+  
+    .testimonial-summary p {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .prev-arrow, .next-arrow {
+      font-size: 10px; /* Smaller arrows */
+      padding: 2px;
+    }
+  }
+  /* For very small devices */
+  @media (max-width: 480px) {
+    .carousel {
+      height: 500px;
+    }
+    .responsive{
+      height : 400px;
+    }
+  
+    .carousel-content {
+      flex-direction: column; /* Stack carousel content vertically */
+    }
+  
+    .testimonial-block {
+      width: 80%;
+      padding: 20px;
+      /* Full width for better fit */
+      margin: 0px 50px; /* Remove margin for full-width stacking */
+    }
+     
+    .testimonial-summary {
+      width: 80%; /* Full width for better fit */
+      padding: 30px;
+      margin: 0px 50px; /* Remove margin for full-width stacking */
+    }
+  
+    .testimonial-content {
+      margin: 5px 0;
+    }
+  
+    .customer-section {
+      flex-direction: column; /* Stack customer section items vertically */
+      align-items: center; /* Align items to the start */
+    }
+  
+    .customer-section img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .testimonial-summary p {
+      font-size: 12px;
+    }
+  
+    .prev-arrow, .next-arrow {
+      font-size: 8px;
+      padding: 2px;
+    }
+  }
+  
+  
+/* General styling for the section */
+.section-p {
+    padding: 20px;
+    margin: 20px auto; /* Center the section and add margin */
+    max-width: 1200px; /* Maximum width for the section */
+  }
+  
+  /* Styling for the heading */
+  .main-heading {
+    font-size: 2rem; /* Font size for the heading */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark grey color for the text */
+  }
+  
+  /* Styling for the description paragraph */
+  .description {
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    color: #666; /* Medium grey color for the text */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 20px; /* Space below the description */
+  }
+  
+  /* Container for the iframe */
+  .section-m1 {
+    overflow: hidden; /* Ensure iframe does not overflow container */
+    border-radius: 8px; /* Rounded corners for the iframe container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the iframe */
+  }
+  
+  /* Responsive iframe styling */
+  iframe {
+    display: block; /* Remove inline spacing */
+    max-width: 100%; /* Ensure iframe is responsive */
+  }
+    

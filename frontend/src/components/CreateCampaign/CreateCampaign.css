@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:ital,wght@200;300;400;500;600;700&display=swap");
+.header1 {
+  border-top-left-radius: 40px;
+  width: 100%;
+  padding-top: 20px;
+  float: right;
+  background: #fff;
+  text-align: right;
+  margin: 0px;
+  justify-content: right;
+
+  /* Ensure background is consistent */
+}
+.outer {
+    display: flex;
+    background: #e9e7e0;
+    height: 100%;
+    width: 100%;
+    position: relative; /* Ensure relative positioning for sticky elements */
+}
+
+.outer-div {
+    background: #efe5de;
+    padding: 10px;
+    z-index: 1; /* Ensure it stays above other content */
+}
+
+.space {
+    padding: 220px 100px 10px 100px;
+    width:60%;
+}
+
+.space1 {
+    padding: 60px 0px;
+    width: 100%;
+    height: calc(100vh - 150px); /* Adjust height based on your needs */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background: #fff;
+    justify-content:flex-start;
+
+}
+
+.inner {
+    position: relative;
+}
+
+header {
+    border-top-left-radius: 40px;
+    width: 100%;
+    padding-top: 20px;
+    float: right;
+    background: #fff;
+    text-align: right;
+
+    /* Ensure background is consistent */
+}
+
+
+input {
+    padding: 15px;
+    margin: 20px;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#postcode {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+button {
+    float: right;
+    border-radius: 20px;
+    padding: 10px;
+    background: #2B2A2A;
+    color: #fff;
+    font-size: 16px;
+    width: 110px;
+}
+
+button:hover {
+    background: #585554;
+}
+
+footer {
+    margin-top: 100px;
+    background: #fff; 
+    padding: 0px 100px;/* Ensure background is consistent */
+}
+
+select {
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin : 0px 100px;
+}
+
+.options div {
+    border-radius: 50px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.options div:hover {
+    background: #CBDECC;
+    border: 1px solid #184B1A;
+}
+
+.passwordConstraint {
+    background-color: #e8eaf3;
+    padding: 10px 50px;
+    margin: 0px 100px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+
+
+
+.radio-option {
+    display: flex;
+    align-items:center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 20px 80px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .radio-option input[type="radio"] {
+    margin-right: 0px;
+  }
+  
+  .radio-option.selected {
+    background-color: #f0f8ff; /* Light blue background for selected */
+    border-color: #00f; /* Blue border for selected */
+  }
+  
+  .radio-option:hover {
+    background-color: #f9f9f9; /* Light grey background on hover */
+  }
+/*   
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  } */
+
+  input[type="radio"] {
+    width: 20%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  input[type="Number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 150px 10px;
+  }
+  
+  footer {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px 20px;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+
+
+  /* src/components/CreateCampaign/CreateCampaign.css */
+
+/* Existing styles */
+
+.drag-drop-area {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 60px 200px;
+  }
+  
+  .drag-drop-area p {
+    color: #888;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .upload-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* src/components/CreateCampaign/CreateCampaign.css */
+.uploaded-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin: 20px 60px;
+    height: 500px;
+    width: 600px;
+  }
+  
+  .image-container img {
+    text-align: center;
+    margin: 20px 70px;
+    height: 400px;
+    width: 500px;
+  }
+  /* src/components/CreateCampaign/CreateCampaign.css */
+
+textarea {
+    width: 80%;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Allows users to resize vertically only */
+  }
+
+.space1 div{
+  text-align: left;
+  margin: 10px 60px;
+  width: 800px;
+}  

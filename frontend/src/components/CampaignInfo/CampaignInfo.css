@@ -1,0 +1,113 @@
+Global Styles
+
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Header */
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-section {
+    flex: 1 1 40%;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-section {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.details-section h2 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.details-section small {
+    font-size: 16px;
+    color: gray;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 20px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.donate-button {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.share-button {
+    background-color: #4CAF50;
+}
+
+.donations-list {
+    margin: 20px 0;
+}
+
+.donations-list p {
+    margin-bottom: 10px;
+}
+
+.donations-list strong {
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .image-section, .details-section {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+

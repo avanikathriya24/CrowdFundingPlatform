@@ -1,0 +1,84 @@
+/* General Styles */
+.donate-container {
+    max-width: 600px; /* Max width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Heading Styles */
+  .donate-container h2 {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  /* Paragraph Styles */
+  .donate-container p {
+    font-size: 18px; /* Font size for paragraphs */
+    margin: 10px 0; /* Space above and below paragraphs */
+  }
+  
+  /* Input Field Styles */
+  .donate-container input[type="number"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside input */
+    margin-bottom: 15px; /* Space below the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  }
+  
+  /* Button Styles */
+  .donate-container button {
+    width: 100%; /* Full width for buttons */
+    padding: 12px; /* Padding */
+    margin-top: 10px; /* Space above buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effects */
+  }
+  
+  /* Specific Button Colors */
+  .donate-container button:first-of-type {
+    background-color: #28a745; /* Green for submit button */
+  }
+  
+  .donate-container button:first-of-type:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .donate-container button:last-of-type {
+    background-color: #dc3545; /* Red for cancel button */
+  }
+  
+  .donate-container button:last-of-type:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .donate-container {
+      padding: 15px; /* Less padding on smaller screens */
+    }
+  
+    .donate-container h2 {
+      font-size: 20px; /* Smaller font size for heading */
+    }
+  
+    .donate-container p {
+      font-size: 16px; /* Smaller font size for paragraphs */
+    }
+  
+    .donate-container input[type="number"], 
+    .donate-container button {
+      font-size: 14px; /* Smaller font size for inputs and buttons */
+    }
+  }
+  

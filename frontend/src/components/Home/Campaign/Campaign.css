@@ -1,0 +1,64 @@
+
+
+.campaign1{
+    background-color: #fff;
+    padding: 50px 50px;
+    width: 92%;
+}
+
+.campaign1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.campaign1 .pro{
+    width: 30%;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0px 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+
+}
+
+
+.campaign1 .pro:hover{
+    background-color: #F5F5F5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.campaign1 .pro .des{
+    text-align: start;
+    padding: 50px 0;
+    margin: 0px ;
+}
+
+.progress {
+    background-color: #cfe1c9;
+    justify-content: center;
+    width: 90%;
+}
+
+.skill {
+    background-color: rgb(116, 194, 92);
+    color: white;
+    padding: 2px;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.box1{
+    width: 80%;
+}
+
+
+.pro img {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}

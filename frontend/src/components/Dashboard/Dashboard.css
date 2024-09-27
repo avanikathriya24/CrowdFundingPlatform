@@ -1,0 +1,96 @@
+/* Dashboard.css */
+
+/* General container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    width: 90%;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  header .green {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: max-content;
+  }
+  
+  header .green:hover {
+    background-color: #218838;
+  }
+  
+  /* Campaigns section styling */
+  .campaigns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .campaign {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: left;
+    margin-left: 30px;
+}
+  
+  .campaign img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .campaign-content {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .campaign-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .campaign-content p {
+    margin: 5px 0;
+  }
+
+  .campaign:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .campaign {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  
+    .campaign img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

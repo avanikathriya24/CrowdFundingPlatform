@@ -1,0 +1,44 @@
+
+.feature{
+    background-color: #fff;
+    padding: 0px 40px;
+}
+
+.feature .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature .pro{
+    width: 45%;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 10px;
+    position: relative;
+    background-color: #F3F3F4;
+    overflow: hidden;
+
+}
+
+.feature .pro img{
+    width: 100%;
+}
+.feature .pro .des{
+    text-align: start;
+    padding: 20px 0;
+}
+
+.feature .pro .des button{
+
+    background-color: #6c6c6c;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.5s;
+}
+.feature .pro:hover button{
+    background-color: #000000;
+    border: none;
+    margin: 0px 0px 0px 20px;
+    border-radius:10px;
+}
