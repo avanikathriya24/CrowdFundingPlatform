@@ -1,6 +1,7 @@
 import React from 'react';
+// import { useNavigate } from 'react-router-dom';
+
 import './AllCategories.css'; // Make sure to create this CSS file
-import { useNavigate } from 'react-router-dom';
 
 
 const AllCategories = () => {
